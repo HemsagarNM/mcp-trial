@@ -18,7 +18,7 @@ async def main():
             
             agent=create_react_agent(model, tools)
             agent_response = await agent.ainvoke({"messages":"Analyse how revenue for MSFT is changing over time."})
-            print(agent_response)
+            print(agent_response["messages"][-1].content))
 
 
 if __name__ == "__main__":
