@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-model= ChatGoogleGenerativeAI(model="gemini-2.0-flash",api_key="AIzaSyCy-zWd0UVHh9fXZdirpLSMpeddxkaCIPI")
+model= ChatGoogleGenerativeAI(model="gemini-2.0-flash",api_key="")
 server_params = StdioServerParameters(
     command="python",
     args=["mcp_server.py"]
